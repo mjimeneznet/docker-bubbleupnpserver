@@ -1,10 +1,11 @@
-from debian:9-slim 
+from debian:9
 MAINTAINER Manuel Jimenez mjimenez@mjimenez.net
 
 #install unzip and wget
-RUN apt-get update && apt-get install -y unzip wget openjdk-8-jdk-headless
+RUN apt-get update && apt-get install -y unzip wget openjdk-8-jre-headless
 
 #download bubbleupnpserver, ffmpeg and clean up
+
 RUN mkdir -p /opt/bubbleupnpserver && \
   cd /opt/bubbleupnpserver && \
   wget -q http://www.bubblesoftapps.com/bubbleupnpserver/core/ffmpeg_linux.zip -O ffmpeg.zip && \
