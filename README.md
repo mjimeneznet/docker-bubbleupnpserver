@@ -5,7 +5,7 @@
   `1900/udp`
   
 ## How to run
-`docker run -it --network host --restart always --name bubbleupnpserver mjimeneznet/docker-docker-bubbleupnpserver:latest`
+`docker run -it --network host --restart always --name bubbleupnpserver mjimeneznet/docker-bubbleupnpserver:latest`
 
 ## How to build
 `docker build . -t bubbleupnpserver`
